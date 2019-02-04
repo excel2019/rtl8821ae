@@ -23,9 +23,10 @@ How to fix issues with realtek wifi card rtl8821ae on Ubuntu - at least is how I
 10 - Type "sudo modprobe -v rtl8821ae swenc=Y"
 
 11 - This should work, but when you reboot and wifi doesn't work try to type this commands on terminal:
+	
 	sudo service network-manager restart
 	sudo ip link set wlp3s0 down
 	sudo modprobe -rv rtl8821ae
 	sudo modprobe -v rtl8821ae swenc=Y
       
-      If this does not work then you're cursed. F*ck realtek
+ If this does not work then you're cursed. F*ck realtek
